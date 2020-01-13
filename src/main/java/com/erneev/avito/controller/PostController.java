@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class PostController {
 
-    private final MemPostService memPostService;
+    public final MemPostService memPostService;
 
     public PostController(MemPostService memPostService) {
         this.memPostService = memPostService;

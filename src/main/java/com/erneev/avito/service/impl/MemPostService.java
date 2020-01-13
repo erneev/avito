@@ -15,19 +15,22 @@ public class MemPostService implements PostService {
             Post.builder()
                     .title("First Title")
                     .body("First body")
+                    .image("/images/1.png")
                     .build(),
             Post.builder()
                     .title("Second Title")
                     .body("Second body")
+                    .image("/images/2.png")
                     .build(),
             Post.builder()
                     .title("Third Title")
                     .body("Third body")
+                    .image("images/3.png")
                     .build())
     );
 
     @Override
     public List<Post> search() {
-        return null;
+        return posts;
     }
 }

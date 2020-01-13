@@ -1,7 +1,22 @@
 <#import "main.ftlh" as main>
 <@main.main>
-    <h1>Hello World!</h1>
+    <div class="container">
+    <div class="row">
     <#list posts as post>
-        <h1>${post.title}</h1>
+        <div class="card col s4">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="${post.image}">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">${post.title}<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>${post.body}</p>
+            </div>
+        </div>
     </#list>
+    </div>
+    </div>
 </@main.main>
