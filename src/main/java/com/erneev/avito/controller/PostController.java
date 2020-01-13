@@ -20,4 +20,9 @@ public class PostController {
         return "hello";
     }
 
+    @GetMapping("/create")
+    public String create(){
+        return "createAd";
+    }
+
 }

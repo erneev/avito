@@ -15,13 +15,12 @@
     <body>
     <nav>
         <div class="nav-wrapper">
-            <form>
-                <div class="input-field">
-                    <input id="search" type="search" required>
-                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                    <i class="material-icons">close</i>
-                </div>
-            </form>
+            <a href="#" class="brand-logo">AvitoMinimum</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Show Ads</a></li>
+                <li><a href="/create">Create Ad</a></li>
+                <li><a href="collapsible.html">GetAd</a></li>
+            </ul>
         </div>
     </nav>
     <#nested>
